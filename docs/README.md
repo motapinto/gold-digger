@@ -259,8 +259,3 @@ The Pit Test Coverage Report can be seen below:
 Note: in order for the pitest to run properly most calls to Mockito.verify method had to be removed in the com.g12.golddigger.controller.state package since this caused an unexpected exception.
 As such the report might not match the actual tests done, however we expect the difference to not be noticeable.
 The actual tests that were used to build this report can be seen in the pitest branch of the project.
-
-## Self-evaluation
-
-Luís Ramos 50%
-Martim Silva 50%
