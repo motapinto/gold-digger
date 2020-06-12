@@ -1,16 +1,5 @@
-# LPOO
-
-> **2019/2020** - 3rd Year, 2st Semester
->
-> **Course:** Laboratório de Programação Orientada por Objectos: [LPOO page in sigarra](https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=436442) | Object Oriented Programming Laboratory
->
-> **Project developed by:**\
-> Martim Silva ([motapinto](https://github.com/motapinto))\
-> Luís Ramos ([luispramos](https://github.com/luispramos))
->
-> **Any problems?**\
-> Start an Issue please.
-
+# Gold Digger 
+Tribute: https://golddigger.frvr.com/
 
 ## Gallery
 
