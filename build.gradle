@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id "info.solidsoft.pitest" version "1.4.9"
+}
+
+apply plugin: "info.solidsoft.pitest"
+
+pitest {
+    pitestVersion = "1.4.9"
+    junit5PluginVersion = '0.12'
+    targetClasses = ['com.g12.golddigger.*']
+}
+
+test {
+    useJUnitPlatform {
+        includeEngines ('junit-jupiter', 'jqwik')
+    }
+}
+
+group 'com.g12.golddigger'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.25.0'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.6.2'
+    testCompile group: 'net.jqwik', name: 'jqwik', version: '1.2.7'
+
+    testImplementation 'org.mockito:mockito-inline:2.25.0' // mock of templates
+
+    // https://mvnrepository.com/artifact/com.googlecode.lanterna/lanterna
+    compile group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.0.2'
+}
